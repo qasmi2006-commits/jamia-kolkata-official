@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>جامعہ اسلامیہ تعلیم الفرقان | مٹیابرج کولکاتا</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, "Noto Nastaliq Urdu", sans-serif;
+            background: #f7faf7;
+            color: #183b2a;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #075b35;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area img {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+            background: white;
+            border-radius: 50%;
+            padding: 4px;
+        }
+
+        .logo-area h1 {
+            font-size: 24px;
+        }
+
+        .logo-area p {
+            color: #f4d06f;
+        }
+
+        nav {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+
+        nav a:hover {
+            background: #d4a72c;
+        }
+
+        .hero {
+            min-height: 450px;
+            background:
+                linear-gradient(rgba(0,60,35,.72), rgba(0,60,35,.72)),
+                url("images/building.jpg") center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 30px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d4a72c;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 7px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #b88916;
+        }
+
+        section {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #075b35;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,.08);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,.08);
+        }
+
+        .card h3 {
+            color: #075b35;
+            margin-bottom: 8px;
+        }
+
+        .contact {
+            background: #eaf4ed;
+        }
+
+        footer {
+            background: #06452a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer a {
+            color: #f4d06f;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .logo-area {
+                margin-bottom: 15px;
+                flex-direction: column;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+
+        <img src="images/logo.png" alt="جامعہ کا لوگو">
+
+        <div>
+            <h1>جامعہ اسلامیہ تعلیم الفرقان</h1>
+            <p>Jamia Islamia Talimul Furqan</p>
+            <small>ESTD: 2015</small>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="#home">ہوم</a>
+        <a href="#about">ہمارے بارے میں</a>
+        <a href="#courses">شعبہ جات</a>
+        <a href="#gallery">گیلری</a>
+        <a href="#contact">رابطہ</a>
+        <a href="#donate">عطیات</a>
+    </nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+    <h2>جامعہ اسلامیہ تعلیم الفرقان</h2>
+
+    <p>
+        قرآن و سنت کی تعلیم کے ساتھ بہترین تربیت
+    </p>
+
+    <a class="btn" href="tel:+916291725380">
+        📞 ہم سے رابطہ کریں
+    </a>
+
+</section>
+
+
+<section id="about">
+
+    <h2>ہمارے بارے میں</h2>
+
+    <div class="about-box">
+
+        <p>
+            جامعہ اسلامیہ تعلیم الفرقان ایک دینی و تعلیمی ادارہ ہے
+            جو طلبہ کو قرآن کریم، دینی علوم اور اسلامی اخلاق و تربیت
+            کی تعلیم فراہم کرنے کے لیے کوشاں ہے۔
+        </p>
+
+        <br>
+
+        <p>
+            <strong>مہتمم:</strong>
+            مولانا اکبر علی قاسمی
+        </p>
+
+        <p>
+            <strong>قیام:</strong>
+            2015
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="courses">
+
+    <h2>ہمارے شعبہ جات</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📖 حفظ القرآن</h3>
+            <p>قرآن کریم حفظ کرنے کی تعلیم</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 ناظرہ قرآن</h3>
+            <p>قرآن کریم صحیح تلفظ کے ساتھ پڑھنے کی تعلیم</p>
+        </div>
+
+        <div class="card">
+            <h3>🕌 دینی تعلیم</h3>
+            <p>بنیادی اسلامی علوم اور دینی تربیت</p>
+        </div>
+
+        <div class="card">
+            <h3>🌙 اسلامی اخلاق</h3>
+            <p>اخلاق و کردار کی بہترین تربیت</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="gallery">
+
+    <h2>فوٹو گیلری</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <p>مدرسہ کی تصاویر جلد یہاں شامل کی جائیں گی۔</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="donate">
+
+    <h2>🤲 تعاون کریں</h2>
+
+    <div class="about-box">
+
+        <p>
+            دینی تعلیم کی خدمت میں اپنا حصہ شامل کریں۔
+            آپ کا تعاون مدرسہ کی تعلیمی سرگرمیوں میں مددگار ہوگا۔
+        </p>
+
+        <br>
+
+        <p>
+            <strong>UPI / QR Code</strong>
+        </p>
+
+        <br>
+
+        <img src="images/qr.png"
+             alt="Donate QR Code"
+             style="max-width:250px;width:100%;">
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>رابطہ کریں</h2>
+
+    <div class="about-box">
+
+        <p>📍 Noorani Basti, Metiabruz, Kolkata – 700066</p>
+
+        <p>
+            📞
+            <a href="tel:+916291725380">
+                +91 62917 25380
+            </a>
+        </p>
+
+        <p>
+            📧
+            <a href="mailto:madarsatalimulfurqan2015@gmail.com">
+                madarsatalimulfurqan2015@gmail.com
+            </a>
+        </p>
+
+        <br>
+
+        <a class="btn"
+           href="https://wa.me/916291725380"
+           target="_blank">
+            💬 WhatsApp
+        </a>
+
+        <br><br>
+
+        <a class="btn"
+           href="https://www.youtube.com/@jamiakolkataofficial"
+           target="_blank">
+            ▶️ ہمارا YouTube چینل
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Jamia Islamia Talimul Furqan
+    </p>
+
+    <p>
+        Noorani Basti, Metiabruz, Kolkata – 700066
+    </p>
+
+</footer>
+
+</body>
+</html>
